@@ -1,0 +1,128 @@
+header {
+    background-color: #d6b4b8;
+    padding: 20px;
+    text-align: justify;
+}
+
+nav {
+    background-color: #d6b4b8;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #2e7dcb; 
+    padding: 10px 20px; 
+    border: 1px solid #2e7dcb; 
+    border-radius: 5px; 
+}
+
+h1 {
+    color: #de1e1e;
+    font-size: 2em;
+    margin-top: 100px;
+    background-color: rgb(224, 176, 158);
+    text-align: center;
+}
+
+
+h1:hover {
+    color: #2e7dcb;
+}
+
+
+.importance {
+    font-weight: bold;
+    color: #cb2e52;
+    font-size: 1.2em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+.lien {
+    color: #2e7dcb;
+    text-decoration: none;
+    border: 1px dotted #2e7dcb;
+}
+
+a {
+    color: black;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #cd4b4b;
+    font-size: 1.5em;
+    margin-top: 50px;
+    background-color: rgb(224, 176, 158);
+    text-align: center;
+}
+
+h2:hover {
+    color: #2e7dcb;
+}
+
+.imagedebut {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-left: double 2px #ed2a34;
+    border-radius: None;
+}
+
+.imagerobbie {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-left: double 2px #ed2a34;
+    border-radius: None;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+.incroyable {
+    color: rgb(174, 30, 164)
+}
+
+body {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    background: linear-gradient(to bottom, #FFE5D4, #FADADD); 
+    margin: 30px;
+    padding: 0;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: pink;
+}
+
+.retour {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e7dcb;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}

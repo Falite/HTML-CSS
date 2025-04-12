@@ -1,0 +1,6 @@
+# Ignorer les fichiers d'images
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.webp
