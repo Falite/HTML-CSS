@@ -1,3 +1,16 @@
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
+@media screen and (max-width: 1280px)
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+/* Sur tous types d'écrans orientés verticalement */
+
+@media all and (orientation: portrait)
+
+
 header {
     background-color: #d6b4b8;
     padding: 20px;
@@ -9,7 +22,8 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -19,6 +33,29 @@ nav a {
     padding: 10px 20px; 
     border: 1px solid #2e7dcb; 
     border-radius: 5px; 
+}
+
+.Conteneur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les boîtes */
+    padding: 20px; /* Espacement interne autour de la grille */
+}
+
+.boite {
+    background-color: #f0f0f0; /* Couleur de fond pour ressembler à une étiquette */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte dans chaque boîte */
+    padding: 10px; /* Espacement interne dans chaque boîte */
+    font-weight: bold; /* Texte en gras */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet visuel */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation fluide */
+}
+
+.boite:hover {
+    transform: scale(1.05); /* Agrandit légèrement au survol */
+    background-color: #ffe5e5; /* Change la couleur au survol */
 }
 
 h1 {
@@ -125,4 +162,101 @@ footer {
     display: block;
     margin-top: 20px;
     text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #3f2d2d;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #3f2d2d;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #d04558;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3f2d2d;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0
+    .3s ease, background-color 0.3s ease; /* Animation fluide */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 10px;
+    background-color: #f0f0f0;
+    background-position: 0;
+    border:rgba(0, 0, 0, 0.1)
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    background-color: #f9f9f92d; /* Couleur de fond */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet visuel */
+}
+
+.submit {
+    background-color: #2e7dcb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+.submit:hover {
+    background-color: #1e5f9b;
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    transition: transform 0.4s ease, background-color 0.4s ease; /* Transition plus lente */
+}
+
+input[type="file"] {
+    background-color: #2e7dcb; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1em; /* Taille du texte */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+}
+
+input[type="file"]:hover {
+    background-color: #1b5a8a; /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    transition: transform 0.4s ease, background-color 0.4s ease; /* Transition plus lente */
+}
+
+:required {
+    background-color: #deddc8; /* Couleur de fond pour les champs requis */
+    border: 1px solid #deddc8; /* Bordure rouge */
 }

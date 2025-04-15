@@ -1,0 +1,63 @@
+<html lang="fr">
+    <header>
+        <nav>
+                <a href="index.html" class="lien">Accueil</a>
+                <a href="page1.html" class="lien">Répertoire des sites de beaux pieds</a>
+                <a href="page2.html" class="lien">Les beaux pieds de Margot Robbie</a>
+                <a href="page3.html" class="lien">Les beaux pieds de Margot Robbie</a>
+        </nav>
+    </header>
+    <head>
+        <meta charset="utf-8" name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <main>
+        <body>
+            <div class="Retour">
+                <a href="index.html" class="lien">Retour à la page d'accueil</a>
+            </div>
+            <h1>Formulaire à remplir pour partager vos beaux pieds</h1>
+            Ce formulaire vous permettra de nous partager les meilleurs clichés de vos beaux pieds.<br>
+            Nos experts l'examineront et vous contacterons si nous pensons que vos pieds sont dignes d'être mis en avant sur notre site.<br>
+            <form action="page3.html" method="post">
+                <fieldset>
+                <legend>Informations personelles</legend>
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" id="nom" name="nom" required><br>
+                    <label for="prenom">Prénom :</label><br>
+                    <input type="text" id="prenom" name="prenom"><br>
+                    <label for="pays">Pays :</label><br>
+                    <input type="text" id="pays" name="pays"><br>
+                    <label for="ville">Ville :</label><br>
+                    <input type="text" id="ville" name="ville"><br>
+                    
+                    <label for="sexe" id="sexe">Sexe :</label><br>
+                    <input type="radio" id="homme" name="sexe" value="homme">
+                    <label for="homme">Homme</label><br>
+                    <input type="radio" id="femme" name="sexe" value="femme" required>
+                    <label for="femme">Femme</label><br>
+                    <input type="radio" id="autre" name="sexe" value="autre">
+                    <label for="autre">Autre</label><br>
+                    <label for="age">Âge :</label><br>
+                    <input type="number" id="age" name="age"><br>
+                <fieldset>
+                <legend>Coordonnées</legend>
+                    <label for="telephone">Téléphone :</label><br>
+                    <input type="tel" id="telephone" name="telephone"><br>
+                    <label for="email">Email :</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </fieldset>
+                </fieldset>
+                <fieldset>
+                <legend>Vos pieds</legend>
+                    <label for="note">Votre perception de la beauté de vos pieds :</label><br>
+                    <input type="range" id="note" name="note" min="0" max="10"><br>
+
+                    <label for="photo">Photo de vos beaux pieds :</label><br>
+                    <input type="file" id="photo" name="photo"> required<br>
+            </fieldset>
+                <input type="submit" value="Envoyer" class="submit">
+        </body>
+    </main>
